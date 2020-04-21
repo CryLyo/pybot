@@ -128,7 +128,7 @@ short time-frame of the initial release, automation will be dealt with later.*
 
 ## Future Improvements (Help Needed!)
 
-Refer to the un-asigned open [Issues] tagged with `improvement` for features
+Refer to the un-asigned open [Issues] tagged with `enhancement` for features
 that need to be implemented in the current sprint.
 
 <!-- Un-wrapped URL Links -->
