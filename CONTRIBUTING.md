@@ -7,7 +7,7 @@
 To grab the latest version of `PyBot` run the following command:
 
 ``` cmd
-git clone https://github.com/skilkis/pybot@develop
+git clone -b develop https://github.com/skilkis/pybot.git
 ```
 
 ### 2. Creating and Activating a Virtual Environment
