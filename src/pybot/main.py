@@ -17,6 +17,7 @@
 from typing import Optional
 
 from discord.ext import commands
+from Shared_Classes import data
 
 
 class PyBot(commands.Bot):
@@ -32,8 +33,19 @@ class PyBot(commands.Bot):
         help_command: str,
         description: Optional[str] = None,
     ):
-        super().__init__(command_prefix, help_command, description)
+
+        super().__init__(command_prefix, help_command, description,case_insensitive=True)
+        for extension in ("cogs.Question_Manager","cogs.Assignment_Manager","cogs.Staff_Commands"):
+            super().load_extension(extension)
+
+    def run(self,
+            TOKEN: str
+    ):
+        super().run(TOKEN)
+
 
 
 if __name__ == "__main__":
-    bot = PyBot()
+    bot = PyBot(command_prefix="!",help_command=None)
+    print(data.settings)
+    bot.run(data.settings["TOKEN"])

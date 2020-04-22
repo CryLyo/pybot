@@ -16,7 +16,6 @@
 
 from discord.ext import commands
 
-
 class Queue(commands.Cog):
     """Provides the functionality of queuing in voice channels."""
 
